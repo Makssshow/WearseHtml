@@ -1,0 +1,33 @@
+.animation_text {
+  opacity: 0;
+  span {
+      opacity: 0;
+    position: relative;
+  }
+}
+
+.animation_image {
+  position: relative;
+  opacity: 0;
+  background-color: grey;
+  z-index: -1;
+  overflow: hidden;
+  img {
+    opacity: 0;
+  }
+}
+
+.animation_block {
+    opacity: 0;
+}
+
+.animation_text_right {
+  width: fit-content;
+  margin-right: 0;
+  margin-left: auto;
+  transform: translateX(150%);
+}
+.animation_text_left {
+  width: fit-content;
+  transform: translateX(-150%);
+}

@@ -1,0 +1,26 @@
+.hero-anim_wrap {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.hero-anim {
+    width: 80%;
+    &__title {
+        width: fit-content;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    &__right {
+        .hero-anim__title {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+}
+.hero__anim_left_1, .hero__anim_left_2, .hero__anim_left_3, .hero__anim_right_1, .hero__anim_right_2, .hero__anim_right_3 {
+    opacity: 0;
+}

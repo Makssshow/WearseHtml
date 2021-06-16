@@ -1,0 +1,77 @@
+.contact-page {
+  main {
+    width: 1000px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .second-title {
+    margin-bottom: 100px;
+    &__title {
+      font-size: 48px;
+      max-width: 100%;
+      width: 600px;
+      margin-bottom: 30px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      color: grey;
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .form {
+    margin-top: 100px;
+    *:focus {
+      outline: none;
+    }
+    &__item {
+      margin: 0 auto 20px;
+      width: 50%;
+      height: 40px;
+      display: block;
+      border: solid grey;
+      border-width: 0 0 1px 0;
+      &_textarea {
+        padding-top: 20px;
+        height: 100px;
+        font-family: inherit;
+        resize: none;
+      }
+      &_checkbox {
+        border: none;
+
+        cursor: pointer;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 14px;
+        color: grey;
+        & input {
+          margin-right: 5px;
+        }
+      }
+      &_submit {
+        background-color: transparent;
+        border: 2px solid #000;
+        border-radius: 30px;
+        height: 60px;
+
+        cursor: pointer;
+
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}

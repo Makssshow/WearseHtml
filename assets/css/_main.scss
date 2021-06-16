@@ -1,0 +1,153 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    font-size: 108px;
+    font-weight: bold;
+    text-align: center;
+
+    span {
+      position: relative;
+    }
+  }
+}
+
+.column {
+  margin: 10vh 0;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1000px;
+
+    padding: 0 10%;
+    margin: 40px auto;
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+      .column__image {
+        margin-right: 0;
+        margin-left: 20px;
+      }
+    }
+  }
+  &__image {
+    max-width: 40%;
+    height: 200px;
+    margin-right: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__description {
+    font-size: 24px;
+  }
+}
+
+.scroll {
+  height: 100vh;
+  position: relative;
+
+  background-color: #363636;
+
+  color: #fff;
+
+  display: flex;
+  align-items: flex-end;
+  overflow-x: hidden;
+
+  &__main-title {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 96px;
+    font-weight: bold;
+    z-index: 2;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    position: relative;
+    margin: 40px;
+    padding-left: 150px;
+
+    width: fit-content;
+
+    display: flex;
+    justify-content: flex-end;
+
+    &:first-child {
+      margin-left: 4em;
+    }
+  }
+  &__text-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+  }
+  &__title {
+    font-size: 96px;
+    font-weight: bold;
+  }
+  &__subtitle {
+    font-size: 24px;
+  }
+  &__image {
+    max-height: 60vh;
+    img {
+      max-height: 60vh;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero__title {
+    font-size: 64px;
+  }
+  .column {
+    &__item {
+      flex-direction: column !important;
+      max-width: 100%;
+      padding: 0;
+    }
+    &__image {
+      max-width: 100%;
+      width: 100%;
+      max-height: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .scroll {
+    &__item {
+      padding-left: 50px;
+      &:first-child {
+        margin-left: 1em;
+      }
+    }
+    &__main-title {
+      font-size: 48px;
+    }
+    &__text-wrap {
+      max-width: 100%;
+    }
+    &__title {
+      font-size: 48px;
+    }
+    &__subtitle {
+      font-size: 24px;
+    }
+  }
+}
