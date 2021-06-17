@@ -22,14 +22,17 @@
 }
 
 .animation_text_right {
-  width: fit-content;
   margin-right: 0;
   margin-left: auto;
-  transform: translateX(150%);
+
+  div {
+    transform: translateX(150%);
+  }
 }
 .animation_text_left {
-  width: fit-content;
-  transform: translateX(-150%);
+  div {
+    transform: translateX(-150%);
+  }
 }
 
 .animation_circle {

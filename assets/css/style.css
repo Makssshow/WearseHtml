@@ -625,19 +625,16 @@ body {
 }
 
 .animation_text_right {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-right: 0;
   margin-left: auto;
+}
+
+.animation_text_right div {
   -webkit-transform: translateX(150%);
           transform: translateX(150%);
 }
 
-.animation_text_left {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.animation_text_left div {
   -webkit-transform: translateX(-150%);
           transform: translateX(-150%);
 }

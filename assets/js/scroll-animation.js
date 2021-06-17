@@ -147,8 +147,8 @@ $(document).ready(function () {
 
     //Text left and right
 
-    var text_left = gsap.utils.toArray(".animation_text_left");
-    var text_right = gsap.utils.toArray(".animation_text_right");
+    var text_left = gsap.utils.toArray(".animation_text_left div");
+    var text_right = gsap.utils.toArray(".animation_text_right div");
 
     text_left.forEach(text => {
       gsap.to(
