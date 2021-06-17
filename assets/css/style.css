@@ -751,6 +751,7 @@ body {
 }
 
 .hero__center_title {
+  opacity: 0;
   font-size: 100px;
   width: 100%;
 }
