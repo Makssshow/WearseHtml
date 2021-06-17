@@ -151,9 +151,9 @@ $(document).ready(function () {
     var text_right = gsap.utils.toArray(".animation_text_right div");
 
     text_left.forEach(text => {
-      gsap.to(
+      gsap.from(
         text, {
-          xPercent: 250,
+          transform: "translateX(-100%)",
         scrollTrigger: {
           trigger: text,
           start: "top bottom",
@@ -164,9 +164,9 @@ $(document).ready(function () {
     });
 
     text_right.forEach(text => {
-      gsap.to(
+      gsap.from(
         text, {
-          xPercent: -250,
+          transform: "translateX(100%)",
         scrollTrigger: {
           trigger: text,
           start: "top bottom",

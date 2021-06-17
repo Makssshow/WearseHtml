@@ -24,14 +24,15 @@
 .animation_text_right {
   margin-right: 0;
   margin-left: auto;
-
+  overflow: hidden;
   div {
-    transform: translateX(150%);
+    transform: translateX(-40%);
   }
 }
 .animation_text_left {
+  overflow: hidden;
   div {
-    transform: translateX(-150%);
+    transform: translate(40%);
   }
 }
 
