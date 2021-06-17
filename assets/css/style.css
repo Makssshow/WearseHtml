@@ -642,6 +642,33 @@ body {
           transform: translateX(-150%);
 }
 
+.animation_circle {
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.animation_circle circle {
+  cx: 100px;
+  cy: 100px;
+  r: 98;
+  stroke-dasharray: 615;
+  stroke-dashoffset: 500;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke: #f00;
+  fill: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transform: rotate(-90deg) translate(-100%, 0%);
+          transform: rotate(-90deg) translate(-100%, 0%);
+}
+
+.animation_circle:hover circle {
+  stroke-dashoffset: 0;
+}
+
 .hero-anim_wrap {
   height: 100vh;
   display: -webkit-box;
@@ -699,5 +726,11 @@ body {
   font-size: 100px;
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .hero__center_title {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

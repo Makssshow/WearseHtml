@@ -153,7 +153,7 @@ $(document).ready(function () {
     text_left.forEach(text => {
       gsap.to(
         text, {
-          xPercent: 200,
+          xPercent: 250,
         scrollTrigger: {
           trigger: text,
           start: "top bottom",
@@ -166,7 +166,7 @@ $(document).ready(function () {
     text_right.forEach(text => {
       gsap.to(
         text, {
-          xPercent: -200,
+          xPercent: -250,
         scrollTrigger: {
           trigger: text,
           start: "top bottom",

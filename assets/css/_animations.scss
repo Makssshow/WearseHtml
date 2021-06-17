@@ -1,7 +1,7 @@
 .animation_text {
   opacity: 0;
   span {
-      opacity: 0;
+    opacity: 0;
     position: relative;
   }
 }
@@ -18,7 +18,7 @@
 }
 
 .animation_block {
-    opacity: 0;
+  opacity: 0;
 }
 
 .animation_text_right {
@@ -30,4 +30,31 @@
 .animation_text_left {
   width: fit-content;
   transform: translateX(-150%);
+}
+
+.animation_circle {
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  circle {
+    cx: 100px; // width / 2
+    cy: 100px; // height / 2
+
+    r: 98;
+    stroke-dasharray: 615; // (r * 2) * 3.14
+    stroke-dashoffset: 500; // Same to array  (615 is fully invisible, 0 is fully visible)
+
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke: #f00;
+    fill: none;
+    transition: 0.5s ease-in-out;
+    transform: rotate(-90deg) translate(-100%, 0%);
+  }
+  &:hover {
+    & circle {
+      stroke-dashoffset: 0;
+    }
+  }
 }
