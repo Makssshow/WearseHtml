@@ -29,10 +29,12 @@
   }
   &__button {
     position: fixed;
-    top: 40px;
-    right: 40px;
+    top: 60px;
+    right: 80px;
+    transform: translate(50%, -50%);
     z-index: 101;
 
+    text-align: center;
     cursor: pointer;
 
     overflow-y: hidden;
@@ -53,6 +55,27 @@
     &.is-active {
       div {
         transform: translateY(-100%);
+      }
+    }
+    &:hover {
+      + .anim_header {
+        .animation_circle {
+          circle {
+            stroke-dashoffset: 0;
+          }
+        }
+      }
+    }
+  }
+  .anim_header {
+    position: fixed;
+    top: 60px;
+    right: 80px;
+    z-index: 100;
+    transform: translate(50%, -50%) scale(.5);
+    .animation_circle {
+      circle {
+        stroke-dashoffset: 615;
       }
     }
   }

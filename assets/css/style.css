@@ -45,9 +45,12 @@ body {
 
 .header__button {
   position: fixed;
-  top: 40px;
-  right: 40px;
+  top: 60px;
+  right: 80px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
   z-index: 101;
+  text-align: center;
   cursor: pointer;
   overflow-y: hidden;
   text-transform: uppercase;
@@ -72,6 +75,23 @@ body {
 .header__button.is-active div {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.header__button:hover + .anim_header .animation_circle circle {
+  stroke-dashoffset: 0;
+}
+
+.header .anim_header {
+  position: fixed;
+  top: 60px;
+  right: 80px;
+  z-index: 100;
+  -webkit-transform: translate(50%, -50%) scale(0.5);
+          transform: translate(50%, -50%) scale(0.5);
+}
+
+.header .anim_header .animation_circle circle {
+  stroke-dashoffset: 615;
 }
 
 .nav {
@@ -635,8 +655,7 @@ body {
 }
 
 .animation_text_right div {
-  -webkit-transform: translateX(-40%);
-          transform: translateX(-40%);
+  text-align: center;
 }
 
 .animation_text_left {
@@ -644,8 +663,7 @@ body {
 }
 
 .animation_text_left div {
-  -webkit-transform: translate(40%);
-          transform: translate(40%);
+  text-align: center;
 }
 
 .animation_circle {

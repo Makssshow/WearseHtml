@@ -144,36 +144,32 @@ $(document).ready(function () {
       0
     );
 
+  //Text left and right
+  var text_wrap = $(".animation_text_wrap");
+  var text_left = gsap.utils.toArray(".animation_text_left div");
+  var text_right = gsap.utils.toArray(".animation_text_right div");
 
-    //Text left and right
-
-    var text_left = gsap.utils.toArray(".animation_text_left div");
-    var text_right = gsap.utils.toArray(".animation_text_right div");
-
-    text_left.forEach(text => {
-      gsap.from(
-        text, {
-          transform: "translateX(-100%)",
-        scrollTrigger: {
-          trigger: text,
-          start: "top bottom",
-          end: "top center",
-          markers: false,
-        },
-      });
+  text_left.forEach((text) => {
+    gsap.from(text, {
+      transform: "translateX(-100%)",
+      scrollTrigger: {
+        trigger: text_wrap,
+        start: "top bottom",
+        end: "top center",
+        markers: false,
+      },
     });
+  });
 
-    text_right.forEach(text => {
-      gsap.from(
-        text, {
-          transform: "translateX(100%)",
-        scrollTrigger: {
-          trigger: text,
-          start: "top bottom",
-          end: "top center",
-          markers: false,
-        },
-      });
+  text_right.forEach((text) => {
+    gsap.from(text, {
+      transform: "translateX(100%)",
+      scrollTrigger: {
+        trigger: text_wrap,
+        start: "top bottom",
+        end: "top center",
+        markers: false,
+      },
     });
-
+  });
 });
