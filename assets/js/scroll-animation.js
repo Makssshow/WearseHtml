@@ -125,7 +125,7 @@ $(document).ready(function () {
 
   var hero_center = gsap.timeline({
     scrollTrigger: {
-      trigger: ".animation__center_wrap",
+      trigger: ".animation_center_wrap",
       start: "top top",
       end: "bottom top",
       markers: false,
