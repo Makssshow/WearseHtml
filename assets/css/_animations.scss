@@ -30,13 +30,15 @@
   overflow: hidden;
   div {
     text-align: center;
+    transform: translateX(-20%); //This is final position
   }
 }
 .animation_text_left {
   overflow: hidden;
   div {
     text-align: center;
-  }
+    transform: translateX(20%); //This is final position
+  } 
 }
 
 .animation_circle {

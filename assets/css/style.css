@@ -656,6 +656,8 @@ body {
 
 .animation_text_right div {
   text-align: center;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
 }
 
 .animation_text_left {
@@ -664,6 +666,8 @@ body {
 
 .animation_text_left div {
   text-align: center;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
 }
 
 .animation_circle {
@@ -749,6 +753,10 @@ body {
 .hero__center_title {
   font-size: 100px;
   width: 100%;
+}
+
+.hero__center .hero-anim__title {
+  width: auto;
   text-align: center;
 }
 
